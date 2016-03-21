@@ -16,4 +16,31 @@ library stringHelper {
                 return false;
         return true;
     }
+	
+	//Finds index of the first occurence of x in y
+	
+	function indexOf(string a, string b){
+	bytes memory a = bytes(a);
+	bytes memory b = bytes(b);
+	
+	if(a.length < 1 || n.length ||(b.length > h.length)){
+	return -1;
+	}else if(a.length > (2**128 -1)){
+	return -1;
+	}else{
+	uint sindex = 0;
+	
+	for (uint i = 0; i< a.length; i++){
+	if(a[i] == b[0]){  // if found first character
+	sindex = 1;
+	while(sindex < b.length && (i + sindex) < a.length && a[i + sindex] == n[sindex] ){
+	sindex++
+	}
+	if(sindex == b.length)
+	       return int(i);
+	}
+	}
+	return -1
+	}
+	}
 }
