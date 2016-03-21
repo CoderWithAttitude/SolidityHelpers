@@ -34,7 +34,7 @@ library stringHelper {
 	if(a[i] == b[0]){  // if found first character
 	sindex = 1;
 	while(sindex < b.length && (i + sindex) < a.length && a[i + sindex] == n[sindex] ){
-	sindex+
+	sindex++
 	}
 	if(sindex == b.length)
 	       return int(i);
