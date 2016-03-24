@@ -40,7 +40,7 @@ library stringHelper {
 	       return int(i);
 	}
 	}
-	return -1
+	return -1;
 	}
 	}
 }
